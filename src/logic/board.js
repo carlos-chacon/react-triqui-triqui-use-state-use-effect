@@ -12,3 +12,10 @@ export const checkWinner = (boardToCheck) => {
   }
   return null;
 };
+
+
+export const checkEndGame = (board) => {
+  // revisamos si hay un empate
+  //si no hay mas espacios vacíos en el tablero
+  return board.every((square) => square !== null);
+};
